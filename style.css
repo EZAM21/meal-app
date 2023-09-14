@@ -1,0 +1,69 @@
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: #f6eeee;
+      }
+      
+      header,
+      .card-container,
+      .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      }
+      
+      #searchInput,
+      #sortBtn {
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+      
+      #searchInput::placeholder {
+        text-align: center;
+      }
+      #rangeInput {
+        margin: 10px;
+      }
+      
+      #sortBtn {
+        color: white;
+        background: teal;
+        border: none;
+        cursor: pointer;
+        font-size: 1rem;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+      }
+      
+      .card-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        border: 3px solid teal;
+        width: 350px;
+        height: 500px;
+        padding: 10px;
+        justify-content: space-around;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.304);
+        border-radius: 5px;
+      }
+      
+      .name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+      .recipe {
+        line-clamp: 4;
+        overflow: hidden;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+      }
